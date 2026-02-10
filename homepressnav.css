@@ -14,7 +14,7 @@ html, body {
 
 /* ================= Body Background ================= */
 body {
-  background-image: url('../image_folder/home.jpg') !important;
+  background-image: url('home.jpg') !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,3 +241,4 @@ div[id] {
 .close-btn:hover {
   color: red;
 }
+

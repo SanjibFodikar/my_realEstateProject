@@ -457,7 +457,7 @@
 
 /* choose us section start */
 .chooseUs{
-    background-image: url('../image_folder/white-circle.jpg');
+    background-image: url('white-circle.jpg');
     box-sizing: border-box;
     padding: 30px;
 }
@@ -686,4 +686,5 @@
     .bbs .city{
         width: 45%;
     }
+
 }

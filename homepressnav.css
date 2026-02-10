@@ -1,0 +1,243 @@
+/* ================= Reset and Base Styles ================= */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* ================= Body Background ================= */
+body {
+  background-image: url('../image_folder/home.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Dark overlay on background image */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* ================= Navbar Styles ================= */
+.nav-container {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1030;
+}
+
+/* Navbar links */
+.navbar-nav .nav-item {
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000000;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+/* Active menu (optional) */
+.navbar-nav .nav-item .nav-link.active {
+  background-color: blue;
+  color: #ffffff;
+}
+
+/* ================= Navbar Toggler ================= */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ================= Icons & Buttons ================= */
+.nav-iconRegister {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-iconRegister button {
+  height: 40px;
+  width: 130px;
+  background-color: transparent;
+  border: 2px solid blue;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-iconRegister button:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.nav-iconRegister .icons {
+  height: 40px;
+  width: 40px;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav-iconRegister .icons:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+.nav-iconRegister .icons i {
+  font-size: 20px;
+}
+
+#peopleIcon {
+  position: relative;
+}
+
+/* ================= Register / Login Form ================= */
+.register-form {
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: fixed;
+  right: 7%;
+  top: 80px; /* navbar height */
+  display: none;
+  z-index: 1050;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  border-radius: 5px;
+}
+
+.register-form p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.register-form span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #666666;
+}
+
+/* Inputs */
+.register-form form input[type="text"],
+.register-form form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.register-form form input[type="text"]:focus,
+.register-form form input[type="password"]:focus {
+  outline: 2px solid #43c370;
+  background-color: #ffffff;
+}
+
+/* Password & forgot */
+.register-form .pas-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Remember me */
+.remember-me {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.remember-me p {
+  margin: 0;
+}
+
+/* Buttons */
+.register-form form button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signinbtn {
+  background-color: #43c370;
+  color: #ffffff;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.signinbtn:hover {
+  background-color: #36a85c;
+}
+
+.registrationbtn {
+  background-color: transparent;
+  color: blue;
+  border: 2px solid blue;
+  transition: 0.3s;
+}
+
+.registrationbtn:hover {
+  background-color: blue;
+  color: #ffffff;
+}
+
+/* ================= Anchor Scroll Fix ================= */
+div[id] {
+  scroll-margin-top: 90px;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px !important;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: red;
+}

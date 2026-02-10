@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/path-to-your-icon-font.css">
+    <link rel="stylesheet" href="./css_folder/homepressnav.css">
+    <link rel="stylesheet" href="./css_folder/homepress.css">
+</head>
+<body>
+<!-- nav-start -->
+<div class="container-fluid nav-container fixed-top">
+   <div class="container">
+   <nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#">Sanjib</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item" style="background-color: blue;">
+          <a class="nav-link" href="#" style="color: #fff;">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recent-buy">Listing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#popular-properties">Property</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#latest-news">Pages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">IDX Pages</a>
+        </li>
+      </ul>
+      <div class="nav-iconRegister d-flex">
+        <button class="rounded-pill" style="width:130px">Add Listing</button>
+        <div class="icons" >
+          <i class="bi bi-heart"></i>
+        </div>
+        <div class="icons" id="peopleIcon">
+          <i class="bi bi-people" ></i>
+        </div>
+    </div>
+    </div>
+    </nav> 
+   </div>
+</div>
+<!-- nav end -->
+
+<!-- ======================registration from start==================-->
+<div class="register-form" id="register-form">
+
+  <!-- Close button -->
+  <span class="close-btn" id="closeRegister">&times;</span>
+
+  <form action="">
+    <p style="color: black;">
+      Login <span>user demo | agent demo</span>
+    </p>
+
+    <div class="login-section">
+      <input type="text" id="login" placeholder="Enter Login" required>
+    </div>
+
+    <div class="pas-forgot">
+      <p style="color: black;">password</p>
+      <span>Forgot?</span>
+    </div>
+
+    <div class="password-section">
+      <input type="password" id="pass" placeholder="Enter Password" required>
+    </div>
+
+    <div class="remember-me">
+      <p style="color:black;">Remember me</p>
+      <input type="checkbox" required>
+    </div>
+
+    <div class="signin">
+      <button class="signinbtn">signin</button>
+    </div>
+
+    <div class="registration">
+      <button class="registrationbtn">Registration</button>
+    </div>
+  </form>
+</div>
+<!-- ======================registration from end ==================-->
+
+
+<!-- real estate section start -->
+<div class="container-fluid real-estate">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4>Find Your Perfect Property</h4>
+                <h1>Trusted Real Estate Solutions</h1>
+                <p>
+                    Explore premium residential and commercial properties with expert guidance,
+                    transparent pricing, and complete peace of mind.
+                </p>
+                <button class="learnmore">
+                    Explore Properties
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- real estate section end -->
+
+
+ <!-- Buy Rent Sold Section -->
+<div class="container-fluid mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+
+        <div class="buy-rent-sold">
+
+          <!-- Tabs -->
+          <ul class="brs">
+            <li class="active" data-type="buy">Buy</li>
+            <li data-type="rent">Rent</li>
+            <li data-type="sold">Sold</li>
+          </ul>
+
+          <!-- Search Bar -->
+          <div class="content-option-section">
+            <select class="aprnment">
+              <option>Property Type</option>
+              <option>Apartment</option>
+              <option>House</option>
+              <option>Villa</option>
+              <option>Office</option>
+            </select>
+
+            <input type="search" id="searchInput"
+              placeholder="Search properties for sale">
+
+            <button class="search-btn">
+              <i class="bi bi-search"></i> Search
+            </button>
+
+            <div class="advanced-search" id="toggleAdvance">
+              Advanced Search <i class="bi bi-chevron-down"></i>
+            </div>
+          </div>
+
+          <!-- Advanced Content -->
+          <div class="content-text" id="advancedBox">
+
+            <h6 id="amenitiesTitle">Amenities for Sale Properties</h6>
+            <ul id="amenitiesList">
+              <li>✔ Balcony</li>
+              <li>✔ Parking</li>
+              <li>✔ Lift</li>
+              <li>✔ Power Backup</li>
+            </ul>
+
+            <div class="filters">
+              <select>
+                <option>City</option>
+                <option>Kolkata</option>
+                <option>Howrah</option>
+                <option>Tamluk</option>
+              </select>
+
+              <select>
+                <option>Beds</option>
+                <option>1 BHK</option>
+                <option>2 BHK</option>
+                <option>3 BHK</option>
+              </select>
+
+              <select>
+                <option>Status</option>
+                <option>Ready</option>
+                <option>Under Construction</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- recent property for buy start-->
+ <div class="container-fluid mt-5 rpfb py-5" id="recent-buy">
+  <div class="container">
+    <div class="row">
+        <div class="col-12 recent-property">
+          <h2>Recent Properties for Buy</h2>
+          <span><i class="bi bi-house-fill"></i> All Properties <span style="color:#234dd4;"> for Buy </span></span>
+        </div>
+    </div>
+    <div class="row gy-4">
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 card1">
+         <div>
+            <div class="image-section">
+              <button class="buy">
+                buy
+              </button>
+              <img src="https://images.pexels.com/photos/1438832/pexels-photo-1438832.jpeg" alt="" srcset="" class="img-fluid">
+              <div class="overlay">
+                <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-section-card mt-2">
+              <div class="heading">
+                  <h5>House On The Arcadia</h5>
+                  <h6>$1200/m0</h6>
+              </div>
+              <i class="bi bi-eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+            </div>
+            <div class="underline"></div>
+            <div class="many-card">
+              <div class="bed">
+                🛏️
+                <span>3</span>
+              </div>
+              <div class="room">
+                <i class="bi bi-house-door"></i>
+                <span>8</span>
+              </div>
+              <div class="car">
+                <i class="bi bi-car-front"></i>
+                <span>2</span>
+              </div>
+              <div class="washroom">
+                <i class="bi bi-droplet"></i>
+                <span>3</span>
+              </div>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- recent property for buy end-->
+
+<!-- looking for new home start -->
+ <div class="container-fluid lookingForNewHome">
+  <div class="container">
+      <div class="row gy-3">
+        <div class="col-12 col-lg-6" >
+          <div class="card2">
+             <div class="looking-icon">
+               <i class="bi bi-search"></i>
+             </div>
+             <div class="looking-content">
+               <h4>Looking for the new home ?</h4>
+               <p>10 new offers. 350 offers on site , trusted by a commuinity by thousand of users</p>
+             </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6" >
+          <div class="card2">
+            <div class="looking-icon">
+               <i class="bi bi-house"></i>
+             </div>
+             <div class="looking-content">
+               <h4>Want to sell your home ?</h4>
+               <p>10 new offers. 350 offers on site , trusted by a commuinity by thousand of users</p>
+             </div>
+          </div>
+        </div>
+      </div>
+  </div>
+ </div>
+<!-- looking for new home end -->
+
+<!-- popular properties start -->
+<div class="container-fluid popular-properties" id="popular-properties">
+  <div class="container">
+     <div class="row">
+        <div class="col-12 recent-property">
+          <h2>Popular Properties</h2>
+          <span><i class="bi bi-house-fill"></i> <span style="color:#ffffff;">1,300+ Available Properties for Buy </span></span>
+        </div>
+    </div>
+    <div class="row mt-3 gy-3">
+      <div class="col-12 col-lg-6">
+        <div class="card3">
+          <div class="buttons-fb">
+            <button class="featured">
+               Featured
+            </button>
+            <button class="buy1">
+              Buy
+            </button>
+          </div>
+          <div class="contentfb">
+            <div class="text-container">
+               <p>Apartment in 6 NE 7th Victory Place</p>
+               <div class="various">
+                <span>$134,000</span>
+                <div class="beds">
+                 <span>🛏️ 4 Beds</span>
+                </div>
+                <div class="washroom">
+                  <i class="bi bi-droplet"></i>
+                  <span>3 Baths</span>
+                </div>
+                <div class="sqft">
+                  <i class="bi bi-square"></i>
+                  <span>1900 sqft</span>
+                </div>
+               </div>
+            </div>
+            <i class="bi bi-eye-fill eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+          </div>
+          <img src="https://images.pexels.com/photos/18089842/pexels-photo-18089842.jpeg" alt="" class="img-fluid">
+          <div class="overlay">
+            <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="card3">
+          <div class="buttons-fb">
+            <button class="featured">
+               Featured
+            </button>
+            <button class="buy1">
+              Buy
+            </button>
+          </div>
+          <div class="contentfb">
+            <div class="text-container">
+               <p>Apartment in 6 NE 7th Victory Place</p>
+               <div class="various">
+                <span>$134,000</span>
+                <div class="beds">
+                 <span>🛏️ 4 Beds</span>
+                </div>
+                <div class="washroom">
+                  <i class="bi bi-droplet"></i>
+                  <span>3 Baths</span>
+                </div>
+                <div class="sqft">
+                  <i class="bi bi-square"></i>
+                  <span>1900 sqft</span>
+                </div>
+               </div>
+            </div>
+            <i class="bi bi-eye-fill eye" data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View!"></i>
+          </div>
+          <img src="https://images.pexels.com/photos/14074856/pexels-photo-14074856.jpeg" alt="" class="img-fluid">
+          <div class="overlay">
+            <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 gy-3">
+      <div class="col-12 col-sm-6 col-lg-4">
+         <div class="card3">
+          <div class="buttons-fb">
+            <button class="featured">
+               Featured
+            </button>
+            <button class="buy1">
+              Buy
+            </button>
+          </div>
+          
+          <img src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg" alt="" class="img-fluid">
+          <div class="overlay">
+            <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+         <div class="card3">
+          <div class="buttons-fb">
+            <button class="featured">
+               Featured
+            </button>
+            <button class="buy1">
+              Buy
+            </button>
+          </div>
+          
+          <img src="https://images.pexels.com/photos/1438834/pexels-photo-1438834.jpeg" alt="" class="img-fluid">
+          <div class="overlay">
+            <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+         <div class="card3">
+          <div class="buttons-fb">
+            <button class="featured">
+               Featured
+            </button>
+            <button class="buy1">
+              Buy
+            </button>
+          </div>
+          
+          <img src="https://images.pexels.com/photos/19219055/pexels-photo-19219055.jpeg" alt="" class="img-fluid">
+          <div class="overlay">
+            <div class="camerawithtext ms-auto">
+                  <i class="bi bi-camera"></i><span>19</span>
+                </div>
+                <div class="lovehouse ms-auto">
+                  <i class="bi bi-house"></i>
+                  <i class="bi bi-heart"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- popular properties end -->
+
+<!-- become a agent section start -->
+<div class="container-fluid P-5 becomeagent">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card4">
+           <h2>Join Our Real Estate Network</h2>
+           <button>
+             <i class="bi bi-person"></i>
+             <span>GET STARTED</span>
+           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- become a agent section end -->
+
+<!-- choose us section start -->
+<div class="container-fluid chooseUs">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Why Choose Us</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="choosePerson text-center">
+           <div class="iconPerson">
+            <i class="bi bi-people"></i>
+           </div>
+           <div class="textContainer">
+            <p>Reliable & Experienced</p>
+            <span>
+              Our services are trusted by a growing network of happy clients who rely on us for quality and transparency.
+            </span>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="choosePerson text-center">
+           <div class="iconPerson">
+            <i class="bi bi-book"></i>
+           </div>
+           <div class="textContainer">
+            <p>Properties for Every Need</p>
+            <span>
+              From affordable homes to premium spaces, we offer carefully selected properties to match every lifestyle.
+            </span>
+           </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="choosePerson text-center">
+           <div class="iconPerson">
+            <i class="bi bi-calculator"></i>
+           </div>
+           <div class="textContainer">
+            <p>Simple & Smart Planning</p>
+            <span>
+              Get clear pricing, easy calculations, and expert guidance to make your property decisions stress-free.
+            </span>
+           </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- choose us section end -->
+
+
+<!-- latest news start -->
+<div class="container-fluid latestNews" id="latest-news">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Latest News</h2>
+      </div>
+    </div>
+    <div class="row mt-3 gy-3">
+       <div class="col-12 col-sm-6 col-lg-4">
+        <div style="box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;" class="p-3">
+          <img src="https://images.pexels.com/photos/7750027/pexels-photo-7750027.jpeg" alt="" srcset="" class="img-fluid">
+        <div class="twoSection">
+          <div class="firstSection">
+            <h5>1</h5>
+            <span>Feb</span>
+          </div>
+          <div class="secondSection">
+            <h6>Retail banks wake up to digital lending this year</h6>
+            <span>
+              Show pony game plan, close the loop so what do you feel you would bring to the table if you were hired for this position. Powerpoint Bunny shotgun approach, nor powerPointless. ... 
+            </span>
+          </div>
+        </div>
+        </div>
+       </div>
+       <div class="col-12 col-sm-6 col-lg-4">
+        <div style="box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px; " class="p-3">
+          <img src="https://images.pexels.com/photos/5998023/pexels-photo-5998023.jpeg" alt="" srcset="" class="img-fluid">
+        <div class="twoSection">
+          <div class="firstSection">
+            <h5>1</h5>
+            <span>Feb</span>
+          </div>
+          <div class="secondSection">
+            <h6>Retail banks wake up to digital lending this year</h6>
+            <span>
+              Show pony game plan, close the loop so what do you feel you would bring to the table if you were hired for this position. Powerpoint Bunny shotgun approach, nor powerPointless. ... 
+            </span>
+          </div>
+        </div>
+        </div>
+       </div>
+       <div class="col-12 col-sm-6 col-lg-4">
+        <div style="box-shadow: rgba(255, 255, 255, 0.16) 0px 10px 36px 0px, rgba(255, 255, 255, 0.06) 0px 0px 0px 1px;" class="p-3">
+          <img src="https://images.pexels.com/photos/5998127/pexels-photo-5998127.jpeg" alt="" srcset="" class="img-fluid">
+        <div class="twoSection">
+          <div class="firstSection">
+            <h5>1</h5>
+            <span>Feb</span>
+          </div>
+          <div class="secondSection">
+            <h6>Retail banks wake up to digital lending this year</h6>
+            <span>
+              Show pony game plan, close the loop so what do you feel you would bring to the table if you were hired for this position. Powerpoint Bunny shotgun approach, nor powerPointless. ... 
+            </span>
+          </div>
+        </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</div>
+<!-- latest news end -->
+
+<!-- our partner section start -->
+<!-- <div class="container-fluid partner">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Our Partners</h2>
+      </div>
+    </div>
+    <div class="row mt-3 gy-3">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div>
+          <img src="https://homepress.stylemixthemes.com/wp-content/uploads/elementor/thumbs/partner_one-o9msuoa20z56rsfxhjopdagsv8asjv0t098ji4smjw.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div>
+          <img src="https://homepress.stylemixthemes.com/wp-content/uploads/elementor/thumbs/partner_two-o9msi37uie4ovbhuht2fo89jkxopdedvosuyzmsrc4.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div>
+          <img src="https://homepress.stylemixthemes.com/wp-content/uploads/elementor/thumbs/partner_three-o9mss45vgj07c0apu1uasaws3jkqlwu89ontqkriuq.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div>
+          <img src="https://homepress.stylemixthemes.com/wp-content/uploads/elementor/thumbs/partner_four-o9msi0ec3l9gxlx76ssae14ugvoln198795yekyu0s.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!-- our partner section end -->
+
+<div class="container-fluid footer" id="footer">
+  <div class="container">
+     <div class="row frul">
+
+      <!-- column 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div>
+          <p>Property Categories</p>
+          <ul>
+            <li>Flats for Rent</li>
+            <li>Independent Houses</li>
+            <li>Budget Apartments</li>
+            <li>Commercial Spaces</li>
+            <li>Office Rentals</li>
+          </ul>
+          <a href="">View all ></a>
+        </div>
+      </div>
+
+      <!-- column 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div>
+          <p>Top Locations</p>
+          <ul>
+            <li>City Center Homes</li>
+            <li>Suburban Properties</li>
+            <li>New Development Areas</li>
+            <li>Business District Offices</li>
+            <li>Residential Projects</li>
+          </ul>
+          <a href="">Explore ></a>
+        </div>
+      </div>
+
+      <!-- column 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div>
+          <p>Helpful Links</p>
+          <ul>
+            <li>Buying Guide</li>
+            <li>Selling Tips</li>
+            <li>Property Valuation</li>
+            <li>Legal Assistance</li>
+            <li>Customer Support</li>
+          </ul>
+          <a href="">Learn more ></a>
+        </div>
+      </div>
+
+      <!-- column 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div>
+          <p>Newsletter</p>
+          <div class="firstlast box">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="Your full name">
+          </div>
+          <div class="firstlast box">
+            <i class="bi bi-envelope"></i>
+            <input type="email" placeholder="Email address">
+          </div>
+        </div>
+        <div class="subscribe box">
+          <span>Join Now</span>
+        </div>
+      </div>
+
+     </div>
+
+     <!-- bottom links -->
+     <div class="row frul2">
+      <div class="col-12">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Company</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Updates</a></li>
+          <li><a href="">Design</a></li>
+          <li><a href="">Saved Items</a></li>
+          <li><a href="">Resources</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+     </div>
+
+     <div class="underline"></div>
+
+     <p class="text-center">
+       © 2026 YourCompanyName. All rights reserved. Real estate solutions made simple.
+     </p>
+
+  </div>
+</div>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js_folder/homepressnav.js"></script>
+<script src="./js_folder/homepress.js"></script>
+</body>
+</html>
